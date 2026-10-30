@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Thangachi ✨</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="sky">
+    <div class="stars"></div>
+    <div class="stars stars-two"></div>
+    <div class="moon">
+      <div class="moon-crater crater-one"></div>
+      <div class="moon-crater crater-two"></div>
+      <div class="moon-crater crater-three"></div>
+    </div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <main id="page1" class="page active">
+    <section class="welcome-content">
+      <p class="small-heading">A LITTLE MAGIC IS WAITING FOR YOU</p>
+      <h1 class="welcome-title">Hello, <span>My little princess</span></h1>
+      <p class="welcome-subtitle">Tonight, the stars are shining just for you.</p>
+      <div class="date-box" id="dateBox">
+        <div class="lock-icon">✦</div>
+        <h2>A Birthday Secret</h2>
+        <p>Enter your birthday date to unlock your surprise</p>
+        <input type="date" id="birthdayDate" aria-label="Birthday date">
+        <button id="unlockBtn">Unlock the Magic ✨</button>
+        <p id="dateError" class="date-error"></p>
+      </div>
+      <div id="birthdayReveal" class="birthday-reveal">
+        <div class="reveal-stars">✦　✧　✦</div>
+        <h1>Happy Birthday</h1>
+        <h2>My Dear Thangachi!</h2>
+        <p>May your world always shine with happiness.</p>
+        <button id="nextBtn">Unwrap the Magic ✨</button>
+      </div>
+    </section>
+  </main>
+
+  
+<main id="page2" class="page memories-page">
+  <section class="memories-content">
+    <p class="small-heading">A COLLECTION OF LITTLE MOMENTS</p>
+    <h1 class="memories-title">Our Beautiful Memories</h1>
+    <p class="memories-subtitle">
+      Every picture holds a little piece of happiness.
+    </p>
+
+    <div class="memory-gallery">
+      <div class="memory-card memory-one" data-photo="assets/images/photo1.jpg">
+        <div class="photo-frame">
+          <img src="photo1.jpg" alt="Our first memory">
+          <div class="photo-caption">A Moment to Remember ✨</div>
+        </div>
+        <span class="memory-star">✦</span>
+      </div>
+
+      <div class="memory-card memory-two" data-photo="assets/images/photo2.jpg">
+        <div class="photo-frame">
+          <img src="photo2..jpg" alt="Our beautiful memory">
+          <div class="photo-caption">Forever in My Heart 💜</div>
+        </div>
+        <span class="memory-star">✧</span>
+      </div>
+    </div>
+
+    <p class="memory-hint">Click a photo to see it closer</p>
+
+    <button id="toLetterBtn">A Letter for You 💌</button>
+  </section>
+</main>
+
+<div id="photoViewer" class="photo-viewer">
+  <button id="closePhoto" class="close-photo">✕</button>
+  <img id="expandedPhoto" src="" alt="Expanded memory">
+</div>
+
+<main id="page3" class="page letter-page">
+  <section class="letter-content">
+    <p class="small-heading">SOMETHING FROM MY HEART</p>
+    <h1 class="letter-heading">A Letter for You</h1>
+    <p class="letter-subtitle">There are some words I want you to read...</p>
+
+    <button id="heartButton" class="heart-button" aria-label="Open the heart">
+      <span class="heart-shape">♥</span>
+      <span class="heart-tap">Touch My Heart</span>
+    </button>
+
+    <div id="letterEnvelope" class="letter-envelope">
+      <div class="envelope-back"></div>
+      <div class="letter-paper">
+        <h2>Dear Thangachi,</h2>
+        <p id="letterText"></p>
+        <p class="letter-sign">With love,<br>Your Brother 💜</p>
+      </div>
+      <div class="envelope-front"></div>
+      <div class="envelope-flap"></div>
+    </div>
+
+    <button id="toRemindersBtn" class="letter-next">
+      19 Little Reminders ✨
+    </button>
+  </section>
+</main>
+
+
+<main id="page4" class="page reminders-page">
+  <section class="reminders-content">
+    <p class="small-heading">19 YEARS • 19 LITTLE REMINDERS</p>
+    <h1 class="reminders-title">A Little Guide for Your Beautiful Journey</h1>
+    <p class="reminders-subtitle">
+      Tap each star to discover a little reminder for life.
+    </p>
+
+    <div class="reminder-progress">
+      <span id="reminderCount">0 / 19 opened</span>
+      <div class="progress-track">
+        <div id="progressFill"></div>
+      </div>
+    </div>
+
+    <div id="reminderGrid" class="reminder-grid"></div>
+
+    <div id="reminderFinal" class="reminder-final">
+      <div class="final-sparkle">✦ ✧ ✦</div>
+      <h2>Your Beautiful 19th Chapter Starts Now!</h2>
+      <p>Keep shining, keep growing and never stop being you. 💜</p>
+      <button id="toCakeBtn">Let's Celebrate! 🎂</button>
+    </div>
+  </section>
+</main>
+
+<main id="page5" class="page cake-page">
+  <section class="cake-content">
+    <p class="small-heading">THE BIG MOMENT IS HERE</p>
+    <h1 class="cake-title">Make a Wish, Harini!</h1>
+    <p class="cake-subtitle">A little wish, a lot of happiness, and a lifetime of beautiful moments.</p>
+
+    <div class="cake-scene">
+      <div class="cake-glow"></div>
+
+      <div class="cake-model" id="cakeModel">
+        <div class="candles" id="candles">
+          <div class="candle candle-one"><span class="flame"></span></div>
+          <div class="candle candle-two"><span class="flame"></span></div>
+          <div class="candle candle-three"><span class="flame"></span></div>
+        </div>
+
+        <div class="cake-top"></div>
+        <div class="cake-layer cake-upper"></div>
+        <div class="cake-layer cake-lower"></div>
+        <div class="cake-plate"></div>
+        <div class="cake-slice" id="cakeSlice"></div>
+      </div>
+    </div>
+
+    <div id="candleInstructions" class="cake-instructions">
+      <h2>Make Your Wish ✨</h2>
+      <p>Turn on your microphone and blow near the speaker to turn off the candles.</p>
+      <button id="micBtn">🎤 Turn On Microphone</button>
+      <button id="manualBlowBtn" class="secondary-cake-btn">Blow Out Candles</button>
+      <p id="micStatus" class="mic-status">Microphone is not active.</p>
+    </div>
+
+    <div id="cutSection" class="cut-section">
+      <h2>Your wish is ready! 💜</h2>
+      <p>Now it's time to cut the birthday cake.</p>
+      <button id="cutCakeBtn">🔪 Cut the Cake</button>
+    </div>
+
+    <div id="birthdayFinal" class="birthday-final">
+      <div class="final-firework">✦ ✧ ✦</div>
+      <h1>HAPPY 19TH BIRTHDAY</h1>
+      <h2>HARINI! 💜</h2>
+      <p>Keep smiling, keep shining and make every year more beautiful than the last.</p>
+      <p class="final-love">With lots of love, Your Brother</p>
+    </div>
+  </section>
+</main>
+
+  <div id="particles"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/welcome.js"></script>
+  <script src="js/memories.js"></script>
+  <script src="js/letter.js"></script>
+  <script src="js/reminders.js"></script>
+  <script src="js/cake.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

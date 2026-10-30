@@ -1,0 +1,88 @@
+
+@media (max-width: 480px) {
+  .date-box {
+    padding: 25px 18px;
+  }
+
+  .date-box h2 {
+    font-size: 22px;
+  }
+
+  .welcome-subtitle {
+    font-size: 13px;
+  }
+
+  .birthday-reveal p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  button {
+    padding: 12px 22px;
+  }
+}
+
+/* RESPONSIVE FIX FOR ALL PAGES */
+
+@media (max-width: 768px) {
+  .page {
+    padding: 35px 15px;
+    min-height: 100svh;
+    height: auto;
+  }
+
+  .welcome-content,
+  .memories-content,
+  .letter-content,
+  .reminders-content,
+  .cake-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .memory-gallery {
+    gap: 30px;
+  }
+
+  .memory-card {
+    max-width: 85vw;
+  }
+
+  .reminder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reminder-card,
+  .reminder-inner {
+    min-width: 0;
+  }
+
+  .letter-envelope {
+    max-width: 100%;
+  }
+
+  .cake-scene {
+    max-width: 100%;
+  }
+
+  button {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 380px) {
+  .reminder-grid {
+    gap: 8px;
+  }
+
+  .reminder-card,
+  .reminder-inner {
+    height: 125px;
+    min-height: 125px;
+  }
+
+  .reminder-back {
+    font-size: 11px;
+  }
+}
